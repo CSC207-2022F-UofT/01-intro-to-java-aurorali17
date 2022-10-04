@@ -134,7 +134,7 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-        for(String i : to_split.split("")){
+        for(String i : to_split.split(" ")){
             ret.append(i.charAt(0));
         }
 
@@ -160,8 +160,8 @@ public class Basics {
     public static int oddSum(int[] arr) {
         int current_sum = 0;
         if(arr.length > 1){
-            for(int i=0;arr.length>i;i++){
-                if(arr[i] %2 !=0){
+            for(int i = 0;arr.length>i; i++){
+                if(i %2 !=0){
                     current_sum = current_sum + arr[i];
                 }
             }
